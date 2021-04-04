@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+}
+.left{
+    width: 65vw;
+    height: 100vh;
+   
+}
+.image1{
+ width: 890px;
+ height: 650px;
+}
+.right{
+    width: 40vw;
+    height: 80vh;
+    
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.image2{
+    width: 60px;
+    height: 60px;
+}
+
+
+.right .inpuut{
+    position: relative;
+
+}
+.right .inpuut input{
+    width: 100%;
+    padding-top:20px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    color: #00bfa6;
+}
+.right .inpuut label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    transition: 0.7s;
+    
+}
+.inpuut input:focus~label, .inpuut input:valid~label{
+    top: -10px;
+    left: 0;
+    font-size: 12px;
+    color: #03a9f4;
+    
+  }
+  .inpuut input:focus{
+    border-bottom: 2px solid #00bfa6;
+  }
+  #user_icon{
+      position: relative;
+      bottom: 55px;
+      right: 20px;
+      color: #00bfa6;
+  }
+  .right h1{
+      color: #00bfa6;
+      padding-bottom: 20px;
+      font-style: italic;
+      text-transform: capitalize;
+      
+  }
+  #btn{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 80px;
+      padding-left: 80px;
+      background-color: #00bfa6;
+      color: white;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      outline: none;
+      cursor: pointer;
+  }
+  #btn:hover{
+      background-color: darkcyan;
+  }
+  #eye{
+      position: absolute;
+      left: 195px;
+      bottom: 50px;
+      color: #00bfa6;
+      cursor: pointer;
+  }
+  

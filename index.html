@@ -1,0 +1,451 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="left_content">
+            <h1>Hotel Maharaja</h1>
+            <i class="fas fa-crown"id="crown"></i>
+            <i class="fas fa-hotel"id="snow"></i>
+            <div class="middle">
+            <h2>HAPPY AND COMFORTABLE PLACE TO STAY</h2>
+            <h2>ENJOY A LUXURY EXPERIENCE</h2>
+            <hr>
+            <button>Available 24x7</button>
+            </div>
+            
+        </div>
+        
+        <div class="right_content" id="menu">
+            <i class="fas fa-concierge-bell" id="bell"></i>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sec">About</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#customers">Customers</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="log">
+            <button id="sign" onclick="signin()">SIGN UP</button>
+            <button id="log" onclick="login()">LOG IN</button>
+            </div>
+        </div>
+        <i class="fas fa-bars" id="nav" onclick="toogle()"></i>
+    </header>
+
+
+  <section id="sec">
+        <div class="first_page">
+       <div class="content">
+        <i class="fas fa-snowflake" id="snowflake"></i>
+           <h1 data-aos="fade-up" data-aos-offset="50">About Us</h1>
+           <i class="fas fa-snowflake" id="snowflake"></i>
+           
+       </div>
+       <p data-aos="fade-up" data-aos-offset="230" class="para1">Stay in one of the top hotels</p>
+        </div>
+       <div class="second_page">
+           <div class="second_content">
+           <h1 data-aos="fade-up" data-aos-offset="150">Welcome to our Hotel</h1><br>
+           <p data-aos="fade-up" data-aos-offset="140">A sparkling newcomer to Kolkata's Lower East Side, Hotel Maharaja features 41 modern guest rooms<br> and luxurious suites, pairing Old World elegance with New World amenities and services.<br> Guests will enjoy the Hotel Maharaja’s central location and charming cafe.</p>
+           </div>
+           <div class="second_staffs">
+               <div class="rooms" data-aos="fade-up" data-aos-offset="200">
+            <i class="fas fa-bed" id="bed"></i>
+            <div class="rooms_loading">
+             <div class="one">
+
+             </div>
+            </div>
+            <p>200 Rooms</p>
+            </div>
+           <br>
+            <div class="users" data-aos="fade-up" data-aos-offset="140">
+                <i class="fas fa-users" id="user"></i>
+                <div class="users_loading">
+                 <div class="two">
+                     
+                 </div>
+                </div>
+                <p>1500 Staffs</p>
+                </div>
+                <br>
+                <div class="bars" data-aos="fade-up" data-aos-offset="120">
+                    <i class="fas fa-glass-cheers" id="bars"></i>
+                    <div class="bars_loading">
+                     <div class="three">
+                         
+                     </div>
+                    </div>
+                    <p>10 Bars</p>
+                    </div>
+                  <br>
+                  <div class="pools" data-aos="fade-up" data-aos-offset="100">
+                    <i class="fas fa-swimming-pool" id="pools"></i>
+                    <div class="pools_loading">
+                     <div class="four">
+                         
+                     </div>
+                    </div>
+                    <p>10 Pool</p>
+                    </div>
+           </div>
+       </div>
+   
+
+    <div id="sec1" class="third page">
+        <div class="head">
+            <h1 data-aos="fade-up" data-aos-offset="200">Hotel Founders</h1>
+        </div>
+        <div class="content1" data-aos="fade-up" data-aos-offset="300">
+            <div class="founder1">
+               <img src="founder1.jpg" class="founder_img">
+               <h2>Mr.Srinivas Reddy</h2>
+            </div>
+            <div class="founder2">
+               <img src="founder2.jpg" class="founder_img">
+               <h2>Mr.Rohit Roy</h2>
+            </div>
+            <div class="founder3">
+                <img src="founder3.jpg" class="founder_img">
+                <h2>Mrs.Alia Aggarwal</h2>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="rooms">
+        <div class="first_page">
+          <h1>Our Rooms</h1>
+        </div>
+        <div class="second_page">
+            <div class="room1" data-aos="fade-up" data-aos-offset="200">
+                <div class="pic">
+                    <img src="superior room.jpg" class="superior_room">
+                </div>
+                <div class="details_room">
+                    <h1>5000/night</h1>
+                    <h1>Superior Room</h1>
+                    <p>Private bathroom<br>
+                        Free Wifi<br>
+                        Free Lunch<br>
+                        Hot/Cold Shower & Bathtub<br>
+                        Writing Desk & Chair<br>
+                        Flat-screen TV<br>
+                        2 pair of slippers<br>
+                        Bottled Mineral Water</p>
+                        <h3>Max Adult:3</h3>
+                        <h3>Max Child:1</h3>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="third_page">
+            <div class="room2" data-aos="fade-up" data-aos-offset="200">
+                
+                <div class="details_room2">
+                    <h1>4500/night</h1>
+                    <h1>Budget Room</h1>
+                    <p>Private bathroom<br>
+                        Free Wifi<br>
+                        Free Lunch<br>
+                        Hot/Cold Shower & Bathtub<br>
+                        Writing Desk & Chair<br>
+                        Flat-screen TV<br>
+                        Bottled Mineral Water</p>
+                        <h3>Max Adult:2</h3>
+                        <h3>Max Child:1</h3>
+                    
+                </div>
+                <div class="pic">
+                    <img src="budget room.jpg" class="budget_room">
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="third_page">
+            <div class="room2" data-aos="fade-up" data-aos-offset="200">
+                <div class="pic">
+                    <img src="luxury room.jpg" class="budget_room">
+                </div>
+                <div class="details_room2">
+                    <h1>4000/night</h1>
+                    <h1>Luxury Room</h1>
+                    <p>Private bathroom<br>
+                        Free Wifi<br>
+                        Free Lunch<br>
+                        Hot/Cold Shower & Bathtub<br>
+                        Flat-screen TV<br>
+                        Bottled Mineral Water</p>
+                        <h3>Max Adult:3</h3>
+                        <h3>Max Child:3</h3>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+         
+        <div class="third_page">
+            <div class="room2" data-aos="fade-up" data-aos-offset="200">
+                
+                <div class="details_room2">
+                    <h1>3000/night</h1>
+                    <h1>Premium Room</h1>
+                    <p>Private bathroom<br>
+                        Free Wifi<br>
+                        Free Lunch<br>
+                        Hot/Cold Shower & Bathtub<br>
+                        Flat-screen TV<br>
+                        Tea/Coffee maker<br>
+                        Bottled Mineral Water</p>
+                        <h3>Max Adult:3</h3>
+                        <h3>Max Child:3</h3>
+                    
+                </div>
+                <div class="pic">
+                    <img src="premium room.jpg" class="budget_room">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="third_page">
+            <div class="room2" data-aos="fade-up" data-aos-offset="200" >
+                <div class="pic">
+                    <img src="normal room.jpg" class="budget_room">
+                </div>
+                <div class="details_room2">
+                    <h1>2000/night</h1>
+                    <h1>Normal Room</h1>
+                    <p>Private bathroom<br>
+                        Free Wifi<br>
+                        Wake-up service<br>
+                        Hot/Cold Shower & Bathtub<br>
+                      
+                        Bottled Mineral Water</p>
+                        <h3>Max Adult:2</h3>
+                        <h3>Max Child:1</h3>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+
+        
+
+        
+
+
+
+    </section>
+    <section id="gallery">
+        <div class="first_page">
+            <div class="phase1">
+            <img src="swimming pool.jpg" class="image1" data-aos="fade-right" data-aos-offset="200">
+            <img src="gallery1.jpg" class="image2"  data-aos="fade-left" data-aos-offset="200">
+            </div>
+            <div class="phase2">
+                <img src="gallery2.jpg" class="image3" data-aos="fade-right" data-aos-offset="200">
+                <img src="gallery3.jpg" class="image4"  data-aos="fade-left" data-aos-offset="200">
+                </div>
+        </div>
+        <div class="second_page" data-aos="zoom-in" data-aos-offset="300">
+            <h1>Foods!</h1>
+        </div>
+        <div class="third_page">
+            <div class="phase1">
+                <img src="food1.jpg" class="image1" data-aos="zoom-in" data-aos-offset="200">
+               
+            </div>
+            <div class="phase2">
+                <img src="food2.jpg" class="image2" data-aos="zoom-out" data-aos-offset="200">
+               
+            </div>
+        </div>
+        <div class="third_page">
+            <div class="phase1">
+                <img src="food3.jpg" class="image1" data-aos="zoom-in" data-aos-offset="200">
+               
+            </div>
+            <div class="phase2">
+                <img src="food4.jpg" class="image2" data-aos="zoom-out" data-aos-offset="200">
+               
+            </div>
+        </div>
+        <div class="third_page">
+            <div class="phase1">
+                <img src="food5.jpg" class="image1" data-aos="zoom-in" data-aos-offset="200">
+               
+            </div>
+            <div class="phase2">
+                <img src="food6.jpg" class="image2" data-aos="zoom-out" data-aos-offset="200">
+               
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="first_page">
+              <div class="head">
+                  <h1>Services!</h1>
+              </div>
+              <div class="content">
+                  <h1>Pick and drop</h1>
+                  <i class="fas fa-snowflake" id="snowflake"></i>
+                  <h1>Parking Space​</h1>
+                  <i class="fas fa-snowflake" id="snowflake"></i>
+                  <h1>Welcome Drink​</h1>
+                  <i class="fas fa-snowflake" id="snowflake"></i>
+                  <h1>Hot & Cold Water​</h1>
+                  <i class="fas fa-snowflake" id="snowflake"></i>
+                  <h1>24 X 7 Available</h1>
+                  
+              </div>
+        </div>
+    </section>
+    <section id="customers">
+        <div class="what" data-aos="fade-up" data-aos-offset="150">
+            <h1>What Customers Say!</h1>
+            <img src="customer.jpg" class="cus_img">
+        </div>
+        <div class="first_page">
+            <div class="content" data-aos="fade-up" data-aos-offset="150">
+                <div class="customer1">
+                    <i class="fas fa-quote-left" id="quotes"></i>
+                    <p>We stayed here for a long weekend and was very impressed with the hotel , the staff were excellent, very friendly and couldn’t do enough for us. Rooms were very nice.</p>
+                    
+                    <div class="border">
+                        <img src="customer1.jpg" class="cus1_img">
+                        <h1>Kate Smith</h1>
+                    </div>
+                </div>
+                <div class="customer1">
+                    <i class="fas fa-quote-left" id="quotes"></i>
+                    <p>This was my 4th visit to this extraordinary hotel.Once again enjoyed my stay.Good facilities in the room.Wine is just fabulous here!.Like that you can have coffee/tea all day.</p>
+                    
+                    <div class="border">
+                        <img src="customer2.jpg" class="cus1_img">
+                        <h1>Hannay Baker</h1>
+                    </div>
+                </div>
+                <div class="customer1">
+                    <i class="fas fa-quote-left" id="quotes"></i>
+                    <p>Thank You for an amazing stay!Your hospitality is outstanding.The sports centre is also very good with excellent quality tennis court.Food quality is nice.Hope to be back soon.</p>
+                    
+                    <div class="border">
+                        <img src="customer3.jpg" class="cus1_img">
+                        <h1>David Willey</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="memorable" data-aos="zoom-in" data-aos-offset="100">
+                <h1>Be Our Guest and</h1>
+                 <h1>Make Every Stay Memorable!</h1>
+                 <img src="h1_shape-people.png" class="people_img">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+          <div class="first_page">
+              <h1>Contact Us</h1>
+              <p class="contact">If you need any help, please contact us or send us an email or go to our forum<br>
+                   We are sure that you can receive our reply as soon as possible.</p>
+                   <h2>Useful Links</h2>
+                   <div class="social">
+                    <i class="fab fa-facebook" id="fb"></i>
+                    <i class="fab fa-instagram" id="fb"></i>
+                    <i class="fab fa-twitter" id="fb"></i>
+                   </div>
+                   
+                   <h1>Address</h1><Address>98 West 21th Street,Newtown 721 Kolkata-71</Address>
+                   <h2 class="phone">Phone No.</h2>
+                   <p class="no.">9090909090</p>
+                   <hr>
+                   <div class="copy">
+                       <p>Copyright ©2021 All rights reserved | This template is made with love by Rohit Saha</p>
+                       <i class="fab fa-facebook" title="Visit my profile ::)" id="fb1" onclick="fb()"></i>
+                   </div>
+          </div>
+    </section>
+</body>
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        
+        duration:1800
+    });
+  </script>
+<script>
+      let menu=document.getElementById('menu');
+      
+      menu.style.right="-300px";
+      function toogle(){
+        let nav=document.getElementById('nav');
+          if(menu.style.right=="-300px"){
+          menu.style.right="0px";
+          nav.classList.replace('fa-bars','fa-times');
+          nav.style.color="rgb(250, 177, 42)";
+         
+          }
+          else if(menu.style.right=="0px"){
+          menu.style.right="-300px";
+          nav.classList.replace('fa-times','fa-bars'); 
+          
+          }
+      }
+      function signin(){
+          window.open("sign.html");
+      }
+      function login(){
+          window.open("login.html");
+      }
+     
+    function fb(){
+        window.open("https://www.facebook.com/rohit.saha.73594479/");
+    }
+</script>
+
+<script>
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+</script>
+
+</html>

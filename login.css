@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('back_login.jpg');
+    background-size: 100% 100%;
+}
+.image1{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+.login_back{
+    width: 50vh;
+    height: 80vh;
+    float: right;
+    position: absolute;
+    right: 60px;
+    top: 50px;
+    overflow: hidden;
+   
+}
+.login{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    transition: 1.2s;
+    cursor: pointer;
+    
+}
+
+.login:hover{
+    transform: scale(1.1);
+}
+.login .inpuut{
+    position: relative;
+}
+#name,#pass{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: inherit;
+    border-bottom: 1px solid orangered;
+    color: orangered;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    
+}
+ 
+
+label{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+    transition: 0.8s;
+    color: whitesmoke;
+    pointer-events: none;
+}
+input:focus~label,input:valid~label{
+    top: -10px;
+    left: 0;
+    font-size: 10px;
+
+}
+#user_icon{
+    position: relative;
+    bottom: 45px;
+    right: 20px;
+    color: orangered;
+}
+#btn{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 80px;
+    padding-left: 80px;
+    background-color: #f33e05;
+    color: whitesmoke;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: #f33e05;
+    outline: none;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: darkcyan;
+}
+#eye{
+    position: absolute;
+    left: 195px;
+    bottom: 40px;
+    color: orangered;
+    cursor: pointer;
+}

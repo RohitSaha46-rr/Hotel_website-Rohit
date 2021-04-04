@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="main_content">
+            <div class="login_back">
+            <div class="Login">
+                <img src="M.jpg" class="image1">
+                <form class="form1" onsubmit="return submit1()" action="#">
+                    <div class="inpuut">
+                    <input type="text" name="user" id="name" autocomplete="off" required>
+                     
+                    <i class="fas fa-user" id="user_icon"></i>
+                    
+                    <label for="Username">Username</label>
+                    </div>
+                    <div class="inpuut">
+                    <input type="password" name="pas" id="pass" autocomplete="off" required>
+                    <i class="fas fa-lock" id="user_icon"></i>
+                    
+                    <label for="Password">Password</label>
+                    <i class="fas fa-eye-slash" aria-hidden="true" id="eye" onclick="toogle()"></i>
+                    </div>
+                    <input type="submit" id="btn" class="btn1" value="SIGN IN">
+            </form>
+            </div>
+            </div>
+        </div>
+    </header>
+</body>
+<script>
+    let name=document.getElementById('name');
+    let pass=document.getElementById('pass');
+    let eye=document.getElementById('eye');
+    let check=true;
+    function submit1(){
+      if(name.value.trim()=="" && pass.value.trim()==""){
+      alert("Username and password are missing");
+      return false;
+      }
+
+      else{
+          alert("Succesfully Logged In");
+    return true;
+      }
+    }
+    
+    function toogle(){
+      if(check){
+          pass.setAttribute("type","text");
+           eye.classList.replace("fa-eye-slash","fa-eye");
+           check=false;
+      }
+      else{
+        pass.setAttribute("type","password");
+           eye.classList.replace("fa-eye","fa-eye-slash");
+           check=true;
+      }
+    }
+</script>
+</html>
